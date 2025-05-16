@@ -1,0 +1,12 @@
+2024-01-18 12:03:11 [INFO]: ACCESS event: data/cloud_storage/documents/file1.txt
+2024-01-18 12:03:11 [INFO]: MODIFY event: data/cloud_storage/confidential/secret.docx
+2024-01-18 12:03:11 [INFO]: ACCESS_DENIED event: data/cloud_storage/confidential/sensitive_data.txt
+2024-01-18 12:03:11 [INFO]: MODIFY event: data/cloud_storage/documents/file1.txt
+2024-01-18 12:03:11 [INFO]: ACCESS_DENIED event: data/cloud_storage/documents/file2.txt
+2024-01-18 12:03:11 [INFO]: ACCESS_DENIED event: data/cloud_storage/confidential/top_secret.txt
+2024-01-18 12:07:46 [INFO]: ACCESS event: data/cloud_storage/documents/file1.txt
+2024-01-18 12:07:47 [INFO]: MODIFY event: data/cloud_storage/confidential/secret.docx
+2024-01-18 12:07:47 [INFO]: ACCESS_DENIED event: data/cloud_storage/confidential/sensitive_data.txt
+2024-01-18 12:07:47 [INFO]: MODIFY event: data/cloud_storage/documents/file1.txt
+2024-01-18 12:07:47 [INFO]: ACCESS_DENIED event: data/cloud_storage/documents/file2.txt
+2024-01-18 12:07:47 [INFO]: ACCESS_DENIED event: data/cloud_storage/confidential/top_secret.txt

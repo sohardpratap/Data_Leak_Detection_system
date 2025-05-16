@@ -1,0 +1,36 @@
+Data Leak Detection System in Hinglish:
+
+1. Project ka Udeshya:
+
+Is project ka udeshya hai ek simulation banane ka, jo batata hai kaise ek data leak detection system kaam karta hai. Hum yahaan ek aisa system banayenge jo cloud storage ko simulate karta hai.
+2. Project Ka Structure:
+
+Humne ek directory structure banaya hai, jise hum local machine par cloud storage simulate kar rahe hain.
+Humare project mein kuch important files hain jaise main.py, data_leak_detection.py, event_handler.py aur ek database directory.
+3. Database Setup:
+
+Humne ek SQLite database bhi setup kiya hai jismein hum file metadata store karte hain.
+4. File System Monitoring:
+
+File system events ko monitor karne ke liye humne watchdog library ka use kiya hai.
+event_handler.py mein MyHandler class banai hai jo file system events ko handle karta hai.
+5. Data Access aur Modification:
+
+data_leak_detection.py mein hum functions likhe hain jinse hum files ko read aur modify kar sakte hain.
+Jaise hi koi file access hoti hai, uski information database mein store hoti hai.
+6. Data Leak Patterns Scan:
+
+scan_for_patterns function ke through hum files ko scan karte hain aur dekhte hain kahin koi potential data leak pattern toh nahi hai.
+Agar pattern milta hai toh uski information log file mein aur database mein store hoti hai.
+7. Alerts:
+
+Agar koi file access hoti hai jisme potential data leak pattern hota hai, toh system alert generate karta hai.
+8. Access Controls:
+
+Humne access controls bhi simulate kiye hain, jaise kisi read-only file ko modify karne ki koshish karne par error generate hota hai.
+9. Testing:
+
+System ko test karne ke liye humne kuch scenarios create kiye hain, jaise files ko read karna, modify karna, data leak pattern scan karna, aur access controls test karna.
+10. Documentation:
+
+Humne project ko document bhi kiya hai, jismein directory structure, database schema, aur component functionality shaamil hai.
