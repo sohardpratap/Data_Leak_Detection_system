@@ -116,12 +116,14 @@ def scan_for_patterns(directory):
             file_path = os.path.join(root, file_name)
 
             try:
+                content = ""  # Initialize content to ensure it's always defined
                 if file_path.endswith('.docx'):
-                    if not os.path.exists(file_path):
-                        raise FileNotFoundError(f"File not found: {file_path}")
-
-                    doc = docx.Document(file_path)
-                    content = '\n'.join([paragraph.text for paragraph in doc.paragraphs])
+                    try:
+                        doc = docx.Document(file_path)
+                        content = '\n'.join([paragraph.text for paragraph in doc.paragraphs])
+                    except Exception as e:
+                        print(f"Error processing DOCX file {file_path}: {e}")
+                        # content remains "" as initialized or could use 'continue'
                 else:
                     with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:
                         content = file.read()
