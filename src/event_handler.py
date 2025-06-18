@@ -1,5 +1,6 @@
 import os
 import logging
+from data_leak_detection import log_event
 
 class MyHandler:
     def on_created(self, event):
@@ -20,5 +21,3 @@ def log_event(event_type, file_path):
         log_message += " (ALERT! Potential data leak detected)"
         # Simulate sending alerts (customize based on your preferred notification mechanism)
 
-    logging.info(log_message)
-    print(log_message)
